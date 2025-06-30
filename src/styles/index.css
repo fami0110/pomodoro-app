@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+@plugin 'daisyui';
+
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url('fonts/RobotoFlex-VariableFont.ttf');
+}
+
+:root,
+body,
+#root {
+    background-color: transparent;
+}
+
+.timer {
+    font-variation-settings: "wght" 400, "wdth" 110, "opsz" 14;
+}
+
+.smooth-progress:indeterminate {
+    transition: all 0.3s linear !important;
+}
+
+.bg-strips {
+    background-image: repeating-linear-gradient(-45deg, var(--color-base-100), var(--color-base-100)13px, var(--color-base-200)13px, var(--color-base-200)14px);
+    background-size: 40px 40px;
+}
+
+header button {
+    svg {
+        transition: 0.3s ease;
+        transition-property: transform, fill;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        svg {
+            transform: scale(1.2);
+        }
+    }
+
+    &#close-btn:hover svg {
+        fill: var(--color-error);
+    }
+
+    &#minimize-btn:hover svg {
+        fill: var(--color-info);
+    }
+}
+
+.form-control {
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    input[type="number"] {
+        width: 68px;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: auto !important;
+        }
+    }
+}
