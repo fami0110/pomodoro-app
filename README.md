@@ -26,7 +26,7 @@ I made this mini project to learn `react` (using `preact`), `tauri v2`, and `rus
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/fami0110/app.git](https://github.com/fami0110/app.git)
+    git clone https://github.com/fami0110/pomodoro-app.git
     cd PMO-Pomodoro-App
     ```
 
