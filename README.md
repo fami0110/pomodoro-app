@@ -31,7 +31,7 @@ https://github.com/user-attachments/assets/2f0a37dc-51c8-47b1-8776-e2cbf685e7f4
 
     ```bash
     git clone https://github.com/fami0110/pomodoro-app.git
-    cd PMO-Pomodoro-App
+    cd pomodoro-app
     ```
 
 2.  **Install dependencies:**
