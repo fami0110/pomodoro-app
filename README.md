@@ -7,7 +7,7 @@ I made this mini project to learn `react` (using `preact`), `tauri v2`, and `rus
 
 ## Technologies Used
 
--   **Framework:** [Tauri v2](https://tauri.app/v2/)
+-   **Framework:** [Tauri V2](https://tauri.app/v2/)
 -   **Frontend:** [Vite](https://vitejs.dev/), [Preact](https://preactjs.com/), [Tailwind CSS](https://tailwindcss.com/), [DaisyUI](https://daisyui.com/), [React Spring](https://www.react-spring.dev/)
 -   **Backend:** [Node.js](https://nodejs.org/), [Rust](https://www.rust-lang.org/)
 
