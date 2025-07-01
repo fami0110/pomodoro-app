@@ -21,6 +21,10 @@ I made this mini project to learn `react` (using `preact`), `tauri v2`, and `rus
 -   Get a quick overview of your productivity at the end of session.
 -   Receive timely desktop native notifications when the session is change.
 
+## Demo
+
+https://github.com/user-attachments/assets/2f0a37dc-51c8-47b1-8776-e2cbf685e7f4
+
 ## Installation
 
 1.  **Clone the repository:**
