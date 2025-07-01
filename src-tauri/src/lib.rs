@@ -48,6 +48,17 @@ pub fn run() {
                 .build(app)?;
             Ok(())
         })
+        .plugin(tauri_plugin_single_instance::init(|app, argv, _cwd| {
+            // This callback runs when a second instance is attempted
+            println!("Second instance detected with args: {:?}", argv);
+            
+            // You can show the existing window or bring it to front
+            if let Some(window) = app.get_webview_window("main") {
+                window.show().ok();
+                window.unminimize().ok();
+                window.set_focus().ok();
+            }
+        }))
         .plugin(tauri_plugin_notification::init())
         .plugin(tauri_plugin_opener::init())
         .invoke_handler(tauri::generate_handler![greet])
